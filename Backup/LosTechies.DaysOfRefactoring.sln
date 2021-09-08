@@ -1,8 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
-MinimumVisualStudioVersion = 10.0.40219.1
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LosTechies.DaysOfRefactoring.SampleCode", "LosTechies.DaysOfRefactoring.SampleCode\LosTechies.DaysOfRefactoring.SampleCode.csproj", "{0657D534-2190-4295-BFDF-8D982088F894}"
 EndProject
 Global
@@ -18,8 +16,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2AC5D593-1505-49A4-AF6E-16C12281711D}
 	EndGlobalSection
 EndGlobal

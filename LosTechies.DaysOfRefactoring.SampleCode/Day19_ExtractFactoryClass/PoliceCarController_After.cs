@@ -1,4 +1,6 @@
-﻿namespace LosTechies.DaysOfRefactoring.ExtractServiceClass.After
+﻿using LosTechies.DaysOfRefactoring.SampleCode.Day19_EncapsulateCollection.SupportingCode;
+
+namespace LosTechies.DaysOfRefactoring.ExtractServiceClass.After
 {
 	public interface IPoliceCarFactory
 	{
@@ -10,7 +12,7 @@
 		public PoliceCar Create(int mileage, bool serviceRequired)
 		{
 			PoliceCar policeCar = new PoliceCar();
-			policeCar.ReadForService = serviceRequired;
+			policeCar.ReadyForService = serviceRequired;
 			policeCar.Mileage = mileage;
 			return policeCar;
 		}

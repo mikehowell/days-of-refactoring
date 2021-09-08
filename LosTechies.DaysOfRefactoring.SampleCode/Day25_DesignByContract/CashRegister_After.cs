@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LosTechies.DaysOfRefactoring.SampleCode.Day25_DesignByContract.SupportingCode;
 using Microsoft.Contracts;
 
 namespace LosTechies.DaysOfRefactoring.SampleCode.DesignByContract.After

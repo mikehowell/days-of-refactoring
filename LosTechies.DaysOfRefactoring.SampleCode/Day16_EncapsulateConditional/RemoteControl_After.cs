@@ -14,11 +14,10 @@ namespace LosTechies.DaysOfRefactoring.EncapsulateConditional.After
 		}
 
 		public string PerformCoolFunction(string buttonPressed)
-		{
-			// Determine if we are controlling some extra function
+        {
+            // Determine if we are controlling some extra function
 			// that requires special conditions
-			if (HasExtraFunctions)
-				return "doSomething";
-		}
+            return HasExtraFunctions ? "doSomething" : "doNothing";
+        }
 	}
 }

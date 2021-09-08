@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using LosTechies.DaysOfRefactoring.SampleCode.Day21_CollapseHierarchy.SupportingCode;
 
 namespace LosTechies.DaysOfRefactoring.SampleCode.CollapseHierarchy.Before
 {

@@ -7,12 +7,9 @@ namespace LosTechies.DaysOfRefactoring.EncapsulateCollection.After
 		private List<OrderLine> _orderLines;
 		private double _orderTotal;
 
-		public IEnumerable<OrderLine> OrderLines
-		{
-			get { return _orderLines; }
-		}
+		public IEnumerable<OrderLine> OrderLines => _orderLines;
 
-		public void AddOrderLine(OrderLine orderLine)
+        public void AddOrderLine(OrderLine orderLine)
 		{
 			_orderTotal += orderLine.Total;
 			_orderLines.Add(orderLine);

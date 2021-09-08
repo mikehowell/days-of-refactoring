@@ -1,4 +1,5 @@
 ﻿using System;
+using LosTechies.DaysOfRefactoring.SampleCode.Day20_ExtractSubclass.SupportingCode;
 
 namespace LosTechies.DaysOfRefactoring.SampleCode.ExtractSubclass.Before
 {

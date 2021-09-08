@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using LosTechies.DaysOfRefactoring.SampleCode.Day11_SwitchToStrategy.SupportingCode;
 
 namespace LosTechies.DaysOfRefactoring.SwitchToStrategy.After_WithIoC
 {
@@ -20,7 +21,7 @@ namespace LosTechies.DaysOfRefactoring.SwitchToStrategy.After_WithIoC
 		}
 	}
 
-	public enum State
+    public enum State
 	{
 		Alaska,
 		NewYork,

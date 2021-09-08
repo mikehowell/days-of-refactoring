@@ -37,6 +37,7 @@ namespace LosTechies.DaysOfRefactoring.SampleCode.RemoveMiddleMan.Before
 		public Account GetAccount(int id)
 		{
 			// get account
-		}
+            return new CheckingAccount();
+        }
 	}
 }

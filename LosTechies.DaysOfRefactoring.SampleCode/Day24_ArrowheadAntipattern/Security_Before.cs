@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LosTechies.DaysOfRefactoring.SampleCode.Day24_ArrowheadAntipattern.SupportingCode;
 
 namespace LosTechies.DaysOfRefactoring.SampleCode.ArrowheadAntipattern.Before
 {

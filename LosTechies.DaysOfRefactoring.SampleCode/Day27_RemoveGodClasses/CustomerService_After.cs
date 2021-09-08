@@ -10,17 +10,20 @@ namespace LosTechies.DaysOfRefactoring.SampleCode.RemoveGodClasses.After
 		public decimal CalculateOrderDiscount(IEnumerable<Product> products, Customer customer)
 		{
 			// do work
-		}
+            return 0;
+        }
 
 		public bool CustomerIsValid(Customer customer, Order order)
 		{
 			// do work
-		}
+            return true;
+        }
 
 		public IEnumerable<string> GatherOrderErrors(IEnumerable<Product> products, Customer customer)
 		{
 			// do work
-		}
+            return new List<string> {"error"};
+        }
 	}
 
 	public class CustomerRegistrationService

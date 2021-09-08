@@ -1,4 +1,6 @@
-﻿namespace LosTechies.DaysOfRefactoring.ReplaceException.After
+﻿using LosTechies.DaysOfRefactoring.SampleCode.Day18_ReplaceException.SupportingCode;
+
+namespace LosTechies.DaysOfRefactoring.ReplaceException.After
 {
 	public class Microwave
 	{

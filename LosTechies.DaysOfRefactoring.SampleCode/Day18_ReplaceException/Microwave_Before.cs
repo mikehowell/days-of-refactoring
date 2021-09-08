@@ -1,4 +1,7 @@
-﻿namespace LosTechies.DaysOfRefactoring.ReplaceException.Before
+﻿using System;
+using LosTechies.DaysOfRefactoring.SampleCode.Day18_ReplaceException.SupportingCode;
+
+namespace LosTechies.DaysOfRefactoring.ReplaceException.Before
 {
 	public class Microwave
 	{
@@ -14,10 +17,14 @@
 			}
 			catch(InUseException)
 			{
-				foodcooked = false;
+				foodCooked = false;
 			}
 
 			return foodCooked;
 		}
 	}
+
+    public class InUseException : Exception
+    {
+    }
 }

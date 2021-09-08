@@ -9,6 +9,10 @@ namespace LosTechies.DaysOfRefactoring.EncapsulateCollection.Before
 
 		public IList<OrderLine> OrderLines => _orderLines;
 
+        public Order()
+        {
+            _orderLines = new List<OrderLine>();
+        }
         public void AddOrderLine(OrderLine orderLine)
 		{
 			_orderTotal += orderLine.Total;
@@ -30,5 +34,10 @@ namespace LosTechies.DaysOfRefactoring.EncapsulateCollection.Before
 	public class OrderLine
 	{
 		public double Total { get; private set; }
+
+        public OrderLine(int total = 0)
+        {
+            Total = total;
+        }
 	}
 }

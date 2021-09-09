@@ -4,14 +4,18 @@ namespace LosTechies.DaysOfRefactoring.EncapsulateCollection.After
 {
 	public class Order
 	{
-		private List<OrderLine> _orderLines;
-		private double _orderTotal;
+		private readonly List<OrderLine> _orderLines;
 
 		public IEnumerable<OrderLine> OrderLines => _orderLines;
+        public double OrderTotal { get; private set; }
 
+        public Order()
+        {
+            _orderLines = new List<OrderLine>();
+        }
         public void AddOrderLine(OrderLine orderLine)
 		{
-			_orderTotal += orderLine.Total;
+			OrderTotal += orderLine.Total;
 			_orderLines.Add(orderLine);
 		}
 
@@ -22,7 +26,7 @@ namespace LosTechies.DaysOfRefactoring.EncapsulateCollection.After
 			if (orderLine == null)
 				return;
 
-			_orderTotal -= orderLine.Total;
+			OrderTotal -= orderLine.Total;
 			_orderLines.Remove(orderLine);
 		}
 	}
@@ -30,5 +34,10 @@ namespace LosTechies.DaysOfRefactoring.EncapsulateCollection.After
 	public class OrderLine
 	{
 		public double Total { get; private set; }
+
+        public OrderLine(int total = 0)
+        {
+            Total = total;
+        }
 	}
 }

@@ -6,4 +6,8 @@
     <RootNamespace>_02_MoveMethod</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LosTechies.DaysOfRefactoring.SampleCode\LosTechies.DaysOfRefactoring.SampleCode.csproj" />
+  </ItemGroup>
+
 </Project>

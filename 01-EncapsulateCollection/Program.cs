@@ -27,8 +27,8 @@ namespace _01_EncapsulateCollection
 
             var listOfOrderLines = order.OrderLines;
             
-            //NOTE: here we are allowed to replace an existing order line
-            //effectively introducing a bug in the program!
+            // NOTE: here we are allowed to replace an existing order line
+            // effectively introducing a bug in the program!
             listOfOrderLines[0] = new Before.OrderLine(6);
             
             Console.WriteLine("Value on each order line:");
@@ -57,8 +57,9 @@ namespace _01_EncapsulateCollection
 
             var listOfOrderLines = order.OrderLines;
 
-            //NOTE: here we are NOT allowed to replace an existing order line
-            //a compile time error prevents the bug - uncomment the line below and build the project.
+            // NOTE: here we are NOT allowed to replace an existing order line
+            // a compile time error prevents the bug - uncomment the line below and build the project.
+            
             //listOfOrderLines[0] = new After.OrderLine(6);
 
             Console.WriteLine("Value on each order line:");

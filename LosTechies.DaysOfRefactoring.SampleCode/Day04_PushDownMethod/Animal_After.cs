@@ -1,4 +1,6 @@
-﻿namespace LosTechies.DaysOfRefactoring.PushDownMethod.After
+﻿using System;
+
+namespace LosTechies.DaysOfRefactoring.PushDownMethod.After
 {
 	public abstract class Animal
 	{
@@ -8,8 +10,8 @@
 	{
 		public void Bark()
 		{
-			// code to bark
-		}
+            Console.WriteLine($"{GetType().Name} goes Woof, woof!");
+        }
 	}
 
 	public class Cat : Animal

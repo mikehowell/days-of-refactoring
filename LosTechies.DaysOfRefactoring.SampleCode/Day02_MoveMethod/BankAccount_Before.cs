@@ -12,8 +12,8 @@ namespace LosTechies.DaysOfRefactoring.MoveMethod.Before
 		public int CreditScore { get; }
 		public double AccountInterest { get; set; }
 
-		//Refactor Step: This method is referenced in the AccountInterest class multiple times
-		//let's move it there!
+		// Refactor Step: This method is referenced in the AccountInterest class multiple times
+		// let's move it there!
 		public double CalculateInterestRate()
 		{
 			if (CreditScore > 800)

@@ -26,9 +26,9 @@ namespace LosTechies.DaysOfRefactoring.MoveMethod.After
 
         public bool IntroductoryRate => CalculateInterestRate() < 0.05;
 
-        //Refactor Step: This method has been moved from the Bank Account class
-        //this class references so should own it.
-        //This method can now be made private exposed via the InterestRate property above.
+        // Refactor Step: This method has been moved from the Bank Account class
+        // this class references so should own it.
+        // This method can now be made private exposed via the InterestRate property above.
         private double CalculateInterestRate()
         {
             if (Account.CreditScore > 800)

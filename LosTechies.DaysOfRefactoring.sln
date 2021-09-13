@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-EncapsulateCollection", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-MoveMethod", "02-MoveMethod\02-MoveMethod.csproj", "{72BE33E3-788B-4541-9937-C2A11026F4CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-PullUpMethod", "03-PullUpMethod\03-PullUpMethod.csproj", "{751072E7-2DC7-48DA-BBC7-DD610ED47CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-PullUpMethod", "03-PullUpMethod\03-PullUpMethod.csproj", "{751072E7-2DC7-48DA-BBC7-DD610ED47CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-PushDownMethod", "04-PushDownMethod\04-PushDownMethod.csproj", "{C0AB2EFE-FEC1-4DB3-A33C-37FF846A054F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{751072E7-2DC7-48DA-BBC7-DD610ED47CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{751072E7-2DC7-48DA-BBC7-DD610ED47CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{751072E7-2DC7-48DA-BBC7-DD610ED47CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0AB2EFE-FEC1-4DB3-A33C-37FF846A054F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AB2EFE-FEC1-4DB3-A33C-37FF846A054F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AB2EFE-FEC1-4DB3-A33C-37FF846A054F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AB2EFE-FEC1-4DB3-A33C-37FF846A054F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

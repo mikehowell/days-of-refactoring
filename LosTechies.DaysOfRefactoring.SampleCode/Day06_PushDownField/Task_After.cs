@@ -6,8 +6,8 @@
 
 	public class BugTask : Task
 	{
-		private string _resolution;
-	}
+        public string Resolution { get; set; }
+    }
 
 	public class FeatureTask : Task
 	{

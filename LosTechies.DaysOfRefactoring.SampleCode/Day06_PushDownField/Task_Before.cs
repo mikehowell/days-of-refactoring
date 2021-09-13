@@ -2,8 +2,8 @@
 {
 	public abstract class Task
 	{
-		protected string _resolution;
-	}
+        public string Resolution { get; set; }
+    }
 
 	public class BugTask : Task
 	{

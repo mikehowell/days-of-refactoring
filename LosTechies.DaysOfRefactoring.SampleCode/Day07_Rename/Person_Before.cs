@@ -4,10 +4,7 @@
 	{
 		public string FN { get; set; }
 
-		public decimal ClcHrlyPR()
-		{
-			// code to calculate hourly payrate
-			return 0m;
-		}
-	}
+        // code to calculate hourly payrate
+		public decimal ClcHrlyPR() => FN == "Bob" ? 50m : 10m;
+    }
 }

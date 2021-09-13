@@ -5,10 +5,6 @@
 	{
 		public string FirstName { get; set; }
 
-		public decimal CalculateHourlyPay()
-		{
-			// code to calculate hourly payrate
-			return 0m;
-		}
-	}
+		public decimal CalculateHourlyPay() => FirstName == "Bob" ? 50m : 10m;
+    }
 }

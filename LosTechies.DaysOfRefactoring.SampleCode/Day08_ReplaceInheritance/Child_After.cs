@@ -1,25 +1,39 @@
 ﻿namespace LosTechies.DaysOfRefactoring.ReplaceInheritance.After
 {
-	public class Sanitation
+	public class CleaningRoutine
 	{
 		public string WashHands()
 		{
-			return "Cleaned!";
+			return "Hands Washed!";
 		}
+
+        public string BrushTeeth()
+        {
+            return "Teeth Brushed!";
+        }
+
+        public string TakeABath()
+        {
+            return "Took a Bubble Bath";
+        }
 	}
 
 	public class Child
-	{
-		private Sanitation Sanitation { get; set; }
+    {
+        private readonly CleaningRoutine _cleaningRoutine;
 
-		public Child()
-		{
-			Sanitation = new Sanitation();
-		}
+        // Refactoring:
+        // Here the CleaningRoutine is passed in to the Child constructor
+        // The Child now HAS A CleaningRoutine
+        // This takes more code to set up
+        public Child(CleaningRoutine cleaningRoutine)
+        {
+            _cleaningRoutine = cleaningRoutine;
+        }
 
 		public string WashHands()
 		{
-			return Sanitation.WashHands();
+			return _cleaningRoutine.WashHands();
 		}
 	}
 }
